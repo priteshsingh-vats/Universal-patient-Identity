@@ -1,0 +1,49 @@
+<style>
+body
+{
+  font-family: 'Titillium Web', sans-serif;
+  background: #40bfc1;
+}
+h1
+{
+  padding-top:20px;
+  margin-top:25px;
+}
+button
+{
+  background: green;
+  color:white;
+  margin:1px solid #40bfc1;
+  margin-bottom:10px;
+}
+form 
+{
+  background: #E8ECEF;
+}
+.con
+{
+background: #E8ECEF;
+margin-left: 300px;
+margin-right:300px;
+border-radius:12px;
+}
+
+</style>
+<hr>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<div class="con">
+<center>
+        <h1>Welcome to the Patient Database</h1>
+        <form action="/blogs/<%= showblog1["_id"] %>?_method=PUT" method="POST">
+            <p>Patient Name</p>
+        <input type="text" name="title" value="<%=showblog1["title"]%>">
+        <p>Image Url</p>
+        <input type="text" name="url" value="<%=showblog1["url"]%>">
+        <p>Symptoms</p>
+        <textarea name="description" id="" cols="30" rows="10"><%=showblog1["description"]%></textarea>
+      <br>
+      <br>  
+      <button>Submit</button>
+        </form>
+        </center>
+      </div>

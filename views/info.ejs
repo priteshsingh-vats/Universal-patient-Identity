@@ -1,0 +1,27 @@
+<style>
+    .container1
+    {
+    border:1px solid grey;
+    border-radius: 10px;
+    }
+    </style>
+<div class="container1">
+<center>
+    <h1 style="color:gray">Spyder's Employee's Company Database</h1>
+    <h2>Here is The list of the Employee</h2>
+    <hr>
+    <div class="cnt-1">
+<%employee.forEach(function(emp){%>
+    <li><mark><%=emp["name"]%></mark>,<i><%=emp["url"]%></i>,<b><%=emp["qualification"]%></b><br><a href="/empinfo/<%=emp._id%>">More Info</a></li>
+<>
+<%})%>
+    </div>
+    <footer id="cu">
+
+            &copy;2019 Personal website &nbsp; Designed by Pritesh with ❤ <br>
+            Contact details☎ 7289048592
+        
+          </footer>
+</center>
+</div>
+      
